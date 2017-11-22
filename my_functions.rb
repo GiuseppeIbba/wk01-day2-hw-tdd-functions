@@ -66,26 +66,75 @@ def divide(divide_1, divide_2)
 
 end
 
-
 def length_of_string(string)
   return string.length()
 end
 
-def test_join_string()
-  string_1 = "Mary had a little lamb, "
-  string_2 = "it's fleece was white as snow"
-  joined_string = join_string( string_1, string_2 )
-  assert_equal( "Mary had a little lamb, it's fleece was white as snow", joined_string )
+def join_string(string_1, string_2)
+
+  return string_1 + string_2
 end
 #
 
-def test_add_string_as_number()
-  add_result = add_string_as_number( "1", "2" )
-  assert_equal( 3, add_result )
+def add_string_as_number(string_1, string_2)
+  string_1 = string_1.to_i
+  string_2 = string_2.to_i
+  return (string_1 + string_2)
 end
 
-# p add(2, 3)
+
+
+
+def number_to_full_month_name(number_to_full_month_name)
+
+require 'Date'
+
+ return
+
+ Date::MONTHNAMES[10]
+ Date::MONTHNAMES[3]
+ Date::MONTHNAMES[9]
+
+end
+
+def substring(number_to_full_month_name)
+
+require 'Date'
+
+return
+
+Date::ABBR_MONTHNAMES[1]
+Date::ABBR_MONTHNAMES[3]
+Date::ABBR_MONTHNAMES[9]
+
+end
+
+
+def volume_of_cube(length_of_side)
+    return length_of_side * length_of_side * length_of_side
+
+  end
+
+def volume_of_sphere(radius)
+  return (4 * 0.3) * 3.14 * (radius ** 3)
+end
+
+def farenheit_to_celsius(farenheit_degrees)
+  return (degree - 32) / 1.8
+end
+
+
+
+
+
+
+
+
+# require Date::ABBR_MONTHNAMES
 #
+# #
+# # p add(2, 3)
+# #
 # def population_density(population, area)
 #   return population / area
 # end
